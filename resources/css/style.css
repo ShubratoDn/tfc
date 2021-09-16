@@ -1,0 +1,282 @@
+/* ================================== */
+        /* BASIC SETUP */
+/* ================================== */
+/* GOOGLE FONTS */
+/* font-family: 'Alfa Slab One', cursive;
+font-family: 'Lato', sans-serif; */
+
+*{
+    margin: 0;   
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: 'Lato', sans-serif;
+}
+
+/* REusable components */
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Alfa Slab One', cursive;
+    font-weight: 400;
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li{
+    list-style-type: none;
+    padding: 2rem;
+}
+
+ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+input{
+    outline: none;
+    padding: .5rem 1rem;
+}
+
+.bg-red{
+    background-color: #E14747;
+}
+
+.text-red{
+    color: #E14747;
+}
+
+.d-block{
+    display: block;
+}
+
+/* ================================== */
+            /*  NAV BAR  */
+/* ================================== */
+/* NAV TOP  */
+.nav-top{
+    background-color: white;
+    height: 4rem;
+    border-bottom:solid rgba(65, 64, 64, 0.199) thin;
+}
+
+.nav-top a{
+    font-size: 1.4rem;    
+}
+
+.nav-top-right{
+    margin-left: auto;
+    margin-right: 0;    
+}
+
+.nav-top-right a{
+    color: rgba(0, 0, 0, 0.856);
+    font-size: 2rem;
+    transition: .3s;
+}
+
+.nav-top-right a:hover{
+    color:  #E14747;
+}
+/* NAV TOP ENDS */
+
+#logo{
+    height: 11rem;
+}
+
+/* NAV MENU STARTS */
+.nav-menu ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-menu ul li{
+    list-style-type: none;
+    padding: 2rem;   
+}
+
+.nav-menu ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+
+/* dropdown feature Starts */
+.dropdown .fa{
+    transition: .3s;
+    font-weight: 700;
+}
+
+.dropdown:hover .fa{
+    transform: rotate(180deg);
+    color: #E14747;
+}
+
+.dropdown-btn{
+    position: relative;
+}
+
+.dropdown-items{
+    position: absolute;
+    min-width: 150%;
+    left: 0;
+    background-color: #fff;
+    overflow: hidden;
+    transform:translate(-0%, -50%) scale(0);    
+    transition: transform .2s ;
+}
+
+.dropdown:hover .dropdown-items{    
+    transform: translate(-0%, -0%) scale(1);
+    animation: hoverOpacity 1.2s;
+}
+
+@keyframes hoverOpacity {
+    from{
+        opacity: .4;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.dropdown-items ul{
+    flex-direction: column;
+    align-items: flex-start; 
+    padding: 1rem ;   
+}
+
+.dropdown-items ul li{    
+    width: 100%;
+    padding: 1.5rem 0;
+    position: relative;    
+}
+
+.dropdown-items ul li::after{    
+    content: "";
+    position: absolute;
+    left: 0%;
+    bottom: 0;
+    height: 1px;
+    width: 00%;
+    background-color: #E14747;
+    transition: .3s ease-out;
+}
+
+.dropdown-items ul li:hover::after{
+    width: 100%;
+}
+
+.dropdown-items ul li a{
+    color: gray;
+    font-weight: 500;
+}
+/* dropdown feature Ends */
+
+
+/* nav-extra side starts */
+.search-group{
+    border: .1rem solid rgba(0, 0, 0, 0.281);
+    padding: 0rem 2rem;
+}
+
+.search-input{
+    border: none;
+}
+
+.search-btn{
+    border: none;
+    background-color: transparent;
+}
+
+.search-btn:focus{    
+    outline: none;
+}
+
+/* LOGIN FORM STARS */
+.user{
+    border: none;
+    background-color: transparent;
+}
+
+.user:focus{
+    outline: none;
+}
+
+.login{
+    background-color: white;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(114, 112, 112, 0.493);
+    width: 25rem;  
+    overflow: hidden;  
+    border-radius: .5rem;
+}
+
+.login-title{
+    background-color: rgba(209, 204, 204, 0.514);
+    padding: 1rem;
+}
+
+.login-form input{
+    margin-top: 1rem ;
+    width: 90%;
+    border-color: rgba(211, 211, 211, 0.356);
+}
+
+.login-submit{
+    font-size: large;
+    font-weight: 500;
+    color: white;
+    background-color: black;
+    border-radius: .3rem;
+}
+/* LOGIN FORM ENDS */
+
+.modal-box{ 
+    display: none;
+    justify-content: center;
+    align-items: center;   
+    background-color: rgba(99, 98, 98, 0.13);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    backdrop-filter: blur(.5rem);
+}
+
+.cart,
+.wishlist{
+    position: relative;
+}
+
+.cart-number,
+.wishlist-number{
+    color: white;
+    position: absolute;
+    top: -1.5rem;
+    right: -1rem;
+    background: #E14747;
+    height: 1.8rem;
+    width: 1.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 1.2rem;
+}
+
+/* nav-extra side Ends */
+

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamai Food cart- Fastest fresh fast food restaurent</title>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Lato&display=swap" rel="stylesheet">
+
+    <!-- vendor css -->
+    <link rel="stylesheet" href="vendor/css/normalize.css">
+    
+    <!-- bootstrap  -->
+    <link rel="stylesheet" href="vendor/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/css/bootstrap-grid.min.css">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="vendor/css/font-awesome.min.css">
+
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="resources/css/style.css">
+    <link rel="stylesheet" href="resources/css/responsive.css">
+</head>
+<body>
+    
+    <!-- header starts -->
+    <header>
+        <nav>
+            <!-- nav top bar -->
+            <div class="nav-top d-flex align-items-center ">
+                <div class="container">
+                    <div class="row">
+                        <!-- nav-top left -->
+                        <div class="col-6 ">
+                            <a href="tel: +8801759458961" class="nav-top-call text-dark"> <i class="text-red fa fa-phone" style="font-size: 2rem;"></i> &nbsp; +8801759458961</a> 
+                            <a href="mailto: mycomputer44985@gmail.com " class="nav-top-mail ml-5 text-dark"> <i class="text-red fa fa-envelope" style="font-size: 2rem;"></i> &nbsp; mycomputer44985@gmail.com</a>
+                        </div>
+                        <!-- nav-top Right -->
+                        <div class="col-2 nav-top-right">
+                            <div class="d-flex justify-content-around">
+                                <a href="#"><i class=" fa fa-facebook"></i></a>
+                                <a href="#"><i class=" fa fa-instagram"></i></a>
+                                <a href="#"><i class=" fa fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="navbar">
+               <div class="container-fluid ">
+                    <div class="row w-100 align-items-center">
+                        <div class="col-1">
+                            <!-- logo -->
+                            <img src="resources/img/logo.png" alt="TFC" title="Tamai Food Cart" id="logo" style="height: 10rem;">
+                        </div>
+                        <div class="col-7">
+                            <!-- nav menus -->
+                            <div class="nav-menu">
+                                <ul>
+                                    <li><a href="#">Home</a></li>
+                                    <li class=" dropdown">
+                                        <!-- dropdown menu -->
+                                        <a href="#" class=" dropdown-btn">Menu <i class=" fa fa-angle-down"></i>
+                                        </a>
+                                        <!-- dropdown items -->
+                                        <div class="dropdown-items">
+                                            <ul>
+                                                <li><a href="#">Fast Food</a></li>
+                                                <li><a href="#">Dupurer Khabar</a></li>
+                                                <li><a href="#">Breakfast</a></li>
+                                                <li><a href="#">Dinner</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>                                   
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                    <li><a href="#">Galary</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="nav-extra">
+                                <!-- nav extra -->
+                                <ul>
+                                    <li>   
+                                        <form action="#" method="get" class="searchbar">
+                                            <!-- Search bar -->
+                                            <div class="search-group d-flex">
+                                                <input type="text" placeholder="Search food" class=" search-input">
+                                                <button type="submit" name="submit" class="fa fa-search search-btn">
+                                            </div>
+                                        </form>
+                                    </li>
+                                    <li title="user">
+                                        <button class="preventListener user" onclick="showModal()">
+                                            <i class=" fa fa-user"></i>                                            
+                                        </button>
+                                    </li>
+                                    <li title="cart">
+                                        <a href="#" class="cart">
+                                            <i class=" fa fa-shopping-basket"></i>
+                                            <div class="cart-number">2</div>
+                                        </a>
+                                    </li>
+                                    <li title="wishlist">
+                                        <a href="#" class="wishlist">
+                                            <i class=" fa fa-heart"></i>
+                                            <div class="wishlist-number">0</div>
+                                        </a>
+                                    </li>                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+               </div>
+            </div>
+        </nav>
+
+        <!--LOGIN modal box -->    
+        <div class="modal-box">
+            <!-- LOGIN FORM -->
+            <div class="login">
+                <form action="#" class="login-form">
+                    <h2 class=" text-center login-title">Login</h2>
+                    <input type="text" placeholder="Phone or Email">
+                    <input type="password" placeholder="Password">
+                    <input type="submit" name="submit" value="Login" class=" login-submit">
+                    <p class=" text-muted">Don't have an account? <a href="#" class="text-red">Sign up</a></p> 
+                    <p><a href="#" class=" text-red">Forgot Password</a></p>
+                </form>
+            </div>
+        </div>
+        <!-- modal box end -->
+        
+    </header>
+    <!-- header ends -->
+
+
+    <!--Main Starts  -->
+        <!--Landing page design starts   -->
+        <section id="lang-page">
+            <div class="land-page">
+                
+            </div>
+        </section>
+    <!--Main Ends  -->
+
+
+
+
+
+<!-- ================javascript links=================== -->
+    <!-- vendor js -->
+    <script src="vendor/js/jquery.min.js"></script>
+    <script src="vendor/js/popper.min.js"></script>
+    <script src="vendor/js/html5shiv.min.js"></script>
+    <script src="vendor/js/respond.min.js"></script>
+
+    <!-- custom js -->
+    <script src="resources/js/main.js"></script>
+</body>
+</html>
