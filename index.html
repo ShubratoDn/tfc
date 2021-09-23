@@ -21,6 +21,13 @@
     <!-- font awesome -->
     <link rel="stylesheet" href="vendor/css/font-awesome.min.css">
 
+    <!-- Owl carousel  -->
+   <link rel="stylesheet" href="vendor/css/owl.carousel.min.css">
+   <link rel="stylesheet" href="vendor/css/owl.theme.default.min.css">
+
+   <!-- DATA AOS -->
+   <link rel="stylesheet" href="vendor/css/aos.css">
+
 
     <!-- custom css -->
     <link rel="stylesheet" href="resources/css/style.css">
@@ -36,9 +43,9 @@
                 <div class="container">
                     <div class="row">
                         <!-- nav-top left -->
-                        <div class="col-6 ">
-                            <a href="tel: +8801759458961" class="nav-top-call text-dark"> <i class="text-red fa fa-phone" style="font-size: 2rem;"></i> &nbsp; +8801759458961</a> 
-                            <a href="mailto: mycomputer44985@gmail.com " class="nav-top-mail ml-5 text-dark"> <i class="text-red fa fa-envelope" style="font-size: 2rem;"></i> &nbsp; mycomputer44985@gmail.com</a>
+                        <div class="col-10 nav-top-left">
+                            <a href="tel: +8801759458961" class="nav-top-call text-dark"> <i class="text-red fa fa-phone" ></i> &nbsp; +8801759458961</a> 
+                            <a href="mailto: mycomputer44985@gmail.com " class="nav-top-mail ml-sm-5 text-dark"> <i class="text-red fa fa-envelope" ></i> &nbsp; mycomputer44985@gmail.com</a>
                         </div>
                         <!-- nav-top Right -->
                         <div class="col-2 nav-top-right">
@@ -53,13 +60,13 @@
             </div>
 
             <div class="navbar">
-               <div class="container-fluid ">
-                    <div class="row w-100 align-items-center">
-                        <div class="col-1">
+               <div class="container-fluid">
+                    <div class="row w-100 d-flex align-items-center">
+                        <div class="col-sm-1 d-flex align-items-center justify-content-center mb-4 mb-sm-0">
                             <!-- logo -->
-                            <img src="resources/img/logo.png" alt="TFC" title="Tamai Food Cart" id="logo" style="height: 10rem;">
+                            <img src="resources/img/logo.png" alt="TFC" title="Tamai Food Cart" id="logo">
                         </div>
-                        <div class="col-7">
+                        <div class="col-7 nav-menu-col">
                             <!-- nav menus -->
                             <div class="nav-menu">
                                 <ul>
@@ -84,7 +91,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-4">
+                        <div class="col-lg-4 col-md-10 col-9 nav-extra-col">
                             <div class="nav-extra">
                                 <!-- nav extra -->
                                 <ul>
@@ -117,6 +124,9 @@
                                 </ul>
                             </div>
                         </div>
+                        <div class="col-1 hamburger">
+                            <i class=" fa fa-bars"></i>
+                        </div>
                     </div>
                </div>
             </div>
@@ -143,16 +153,174 @@
 
 
     <!--Main Starts  -->
+    <main>
+
         <!--Landing page design starts   -->
-        <section id="lang-page">
+        <section id="land-page"> 
             <div class="land-page">
-                
+                <div class="owl-carousel owl-theme">
+                    <!--Item 1 -->
+                    <div class="item">                        
+                        <div class="land-item">                            
+                            <img src="resources/img/land-bg1.jpg" alt="" class="land-bg">
+
+                            <!-- land page overlay -->
+                            <div class="land-bg-overlay"></div>  
+
+                            <!-- Land Page text -->
+                            <div class="land-text">
+                                <div class="land-welcome">Welcome to Tamai Food Cart</div>
+                                <div class="land-title">
+                                    <h1>Get the Best and Fresh Fast Food and Delivery</h1>
+                                </div>
+                                <div class="land-info">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, ab.
+                                </div>
+                                <a href="#"  class=" land-btn">Shop Now</a>
+                            </div>
+                        </div>
+                    </div> 
+
+
+                    <!--Item 2 -->
+                    <div class="item">                        
+                        <div class="land-item">                            
+                            <img src="resources/img/land-bg2.jpg" alt="" class="land-bg">
+
+                            <!-- land page overlay -->
+                            <div class="land-bg-overlay"></div>  
+
+                            <!-- Land Page text -->
+                            <div class="land-text">
+                                <div class="land-welcome">Welcome to Tamai Food Cart</div>
+                                <div class="land-title">
+                                    <h1>Get the Best and Fresh Fast Food and Delivery</h1>
+                                </div>
+                                <div class="land-info">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, ab.
+                                </div>
+                                <a href="#"  class=" land-btn">Shop Now</a>
+                            </div>
+                        </div>
+                    </div> 
+                                  
+
+
+                    <!--Item 3 -->
+                    <div class="item">                        
+                        <div class="land-item">                            
+                            <img src="resources/img/land-bg3.jpg" alt="" class="land-bg">
+
+                            <!-- land page overlay -->
+                            <div class="land-bg-overlay"></div>  
+
+                            <!-- Land Page text -->
+                            <div class="land-text">
+                                <div class="land-welcome">Welcome to Tamai Food Cart</div>
+                                <div class="land-title">
+                                    <h1>Get the Best and Fresh Fast Food and Delivery</h1>
+                                </div>
+                                <div class="land-info">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, ab.
+                                </div>
+                                <a href="#"  class=" land-btn">Shop Now</a>
+                            </div>
+                        </div>
+                    </div> 
+                                  
+                </div>
+            </div>            
+        </section>                   
+        <!--Landing page design starts   -->
+
+
+        <!-- CATAGORIES section starts  -->
+        <section id="catagories">
+            <div class="container">
+                <div class="all-catagories">
+                    <!-- Title -->
+                    <div class="title">
+                       Our <span class="t-hl">Catagories</span>
+                    </div>
+
+                    <div class="owl-carousel owl-theme my-5">
+                        <div class="item">
+                            <!-- catagory -->
+                            <div class="catagory">
+                                <div class="catagory-img-div">
+                                    <img src="resources/img/catagory1.jpg" alt="catagory" class="catagory-img img-thumbnail ">
+                                </div>
+                                <div class="catagory-name">
+                                    <a href="https://google.com" class=" stretched-link">Pizza</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <!-- catagory -->
+                            <div class="catagory">
+                                <div class="catagory-img-div">
+                                    <img src="resources/img/catagory2.jpg" alt="catagory" class="catagory-img img-thumbnail ">
+                                </div>
+                                <div class="catagory-name">
+                                    <a href="https://google.com" class=" stretched-link">Burger</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <!-- catagory -->
+                            <div class="catagory">
+                                <div class="catagory-img-div">
+                                    <img src="resources/img/catagory3.jpg" alt="catagory" class="catagory-img img-thumbnail ">
+                                </div>
+                                <div class="catagory-name">
+                                    <a href="https://google.com" class=" stretched-link">Mutton Biriani</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <!-- catagory -->
+                            <div class="catagory">
+                                <div class="catagory-img-div">
+                                    <img src="resources/img/catagory4.jpg" alt="catagory" class="catagory-img img-thumbnail ">
+                                </div>
+                                <div class="catagory-name">
+                                    <a href="https://google.com" class=" stretched-link">Kacchi Biriani</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <!-- catagory -->
+                            <div class="catagory">
+                                <div class="catagory-img-div">
+                                    <img src="resources/img/catagory4.jpg" alt="catagory" class="catagory-img img-thumbnail ">
+                                </div>
+                                <div class="catagory-name">
+                                    <a href="https://google.com" class=" stretched-link">Kacchi Biriani</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <!-- catagory -->
+                            <div class="catagory">
+                                <div class="catagory-img-div">
+                                    <img src="resources/img/catagory4.jpg" alt="catagory" class="catagory-img img-thumbnail ">
+                                </div>
+                                <div class="catagory-name">
+                                    <a href="https://google.com" class=" stretched-link">Kacchi Biriani</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
+        <!-- CATAGORIES section Ends -->
+    </main>
     <!--Main Ends  -->
-
-
-
+        
+    <div style="height: 50vh; width: 100vw; background-color: rgba(127, 255, 212, 0.315);"></div>
+        
+        
 
 
 <!-- ================javascript links=================== -->
@@ -162,7 +330,14 @@
     <script src="vendor/js/html5shiv.min.js"></script>
     <script src="vendor/js/respond.min.js"></script>
 
+    <!-- owl carousel -->
+    <script src="vendor/js/owl.carousel.min.js"></script>
+    <!-- DATA AOS -->
+    <script src="vendor/js/aos.js"></script>
+
     <!-- custom js -->
     <script src="resources/js/main.js"></script>
+
+
 </body>
 </html>

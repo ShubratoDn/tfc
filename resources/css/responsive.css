@@ -1,3 +1,256 @@
-@media (max-width: 992px) {
+@media (max-width: 991px) {
 
+    .nav-menu-col{
+        display: none;
+    }
+
+    .hamburger{
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        display: block;
+    }
+
+    .land-bg{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+/* ================================ */
+            /* TAB SIZE */
+/* ================================ */
+@media (max-width: 768px) {
+
+    .nav-top a{
+        font-size: 80% ;
+    }
+
+    *.nav-extra{
+        font-size: 80%;
+    }
+
+    .search-group{        
+        padding: 0 1rem;
+    }
+
+    /* land page responsive */
+    .land-item{
+        height: 60vh;
+    }
+
+    .land-welcome{      
+        word-spacing: 0;
+        font-size: 1.3rem;        
+    }
+
+    .land-info{
+        font-size: 1.2rem;
+    }
+
+    .land-title h1{
+        font-size: 4rem;
+    }
+
+}
+
+
+/* ================================ */
+            /* MAX 600 */
+/* ================================ */
+@media (max-width: 600px) {
+
+    .nav-extra ul li{ 
+        padding: 1rem;
+    }
+
+    .search-input{
+        width: 10rem;
+    }
+
+    .land-welcome{      
+        word-spacing: 0;
+        font-size: 1.2rem;        
+    }
+}
+
+/* ================================ */
+            /* MAX 576 */
+/* ================================ */
+@media (max-width: 576px) {
+
+    #logo{
+        height: 6rem;
+    }    
+}
+
+/* ================================ */
+            /* MAX 550 */
+/* ================================ */
+@media (max-width: 550px) {
+
+    .land-welcome{      
+        word-spacing: 0;
+        font-size: 1.1rem;        
+    }
+
+    .land-title h1{
+        font-size: 3.5rem;
+    }
+
+
+    .land-info{
+        font-size: 1.1rem;
+    }
+
+ 
+}
+
+
+/* ================================ */
+            /* MAX 500 */
+/* ================================ */
+@media (max-width: 500px) {
+
+    .search-input{
+        width: 8rem;
+    }
+
+    /* LAND PAGE */
+    .land-text{
+        width: 80%;
+    }
+
+    #land-page .owl-nav .owl-next,
+    #land-page .owl-nav .owl-prev{
+        top: 100%;
+        background-color: black !important;    
+        color: white !important;
+        font-size: 1.5rem;
+        width: 3rem;
+        height: 3rem;
+    }
+
+    #land-page .owl-nav .owl-prev{
+        left: 40%;
+    }
+    #land-page .owl-nav .owl-next{
+        right: 40%;
+    }
+
+    .land-welcome{      
+        word-spacing: 0;
+        font-size: 1.2rem;        
+    }
+
+    .land-title h1{
+        font-size: 3.5rem;
+    }
+
+    .land-info{
+        font-size: 1.2rem;
+    }
+
+}
+
+
+/* ================================ */
+            /* LARGE MOBILE */
+/* ================================ */
+@media (max-width: 425px) {
+
+    .nav-top a{
+        font-size: 60%;
+        padding: .5rem;
+    }
+
+    #logo{
+        height: 6rem;
+        z-index: 5;
+    }
+
+    .nav-extra-col{
+        padding: 0;
+    }
+
+    #logo{
+        height: 5rem;
+        z-index: 5;
+    }
+
+
+    .nav-extra ul li{ 
+        padding: 1rem;
+    }
+
+    .search-input{
+        width: 5rem;
+        height: 2rem;
+        font-size: 80%;
+        padding: .5rem;
+    }
+
+    .nav-extra a,
+    .wishlist-number,
+    .cart-number,
+    button{
+        font-size: 80%;
+        padding: 0;
+    }
+
+    .nav-top a{
+        font-size: 1rem;
+        padding: .5rem;
+    }
+
+
+    /* LAND PAGE */
+    .land-item{
+        height: 40vh;
+    }
+
+    .land-welcome{
+        font-size: 1.1rem;        
+    }
+
+    .land-title h1{
+        font-size: 3.0rem;
+    }
+
+    .land-info{
+        font-size: 1.1rem;
+    }
+
+    .land-btn{
+        padding: 1rem 2.0rem;
+        font-size: 1.4rem;
+    }
+
+}
+
+
+@media (max-width: 375px) {
+
+    .container-fluid{
+        padding: 0;
+        margin: 0;
+    }
+
+    .hamburger{
+        font-size: 80%;
+        margin-bottom: 1rem;
+    }
+
+    .nav-top a{
+        font-size: 50%;
+        padding: .5rem;
+    }
+
+
+    #land-page .owl-nav .owl-prev{
+        left: 35%;
+    }
+    #land-page .owl-nav .owl-next{
+        right: 35%;
+    }
+ 
 }
