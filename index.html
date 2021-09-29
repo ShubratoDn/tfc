@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamai Food cart- Fastest fresh fast food restaurent</title>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Lato&display=swap" rel="stylesheet">
+
+    <!-- vendor css -->
+    <link rel="stylesheet" href="vendor/css/normalize.css">
+    
+    <!-- bootstrap  -->
+    <link rel="stylesheet" href="vendor/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/css/bootstrap-grid.min.css">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="vendor/css/font-awesome.min.css">
+
+    <!-- Owl carousel  -->
+   <link rel="stylesheet" href="vendor/css/owl.carousel.min.css">
+   <link rel="stylesheet" href="vendor/css/owl.theme.default.min.css">
+
+   <!-- DATA AOS -->
+   <link rel="stylesheet" href="vendor/css/aos.css">
+
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="resources/css/style.css">
+    <link rel="stylesheet" href="resources/css/responsive.css">
+</head>
+<body>
+    
+    <!-- header starts -->
+    <header>
+        <nav>
+            <!-- nav top bar -->
+            <div class="nav-top d-flex align-items-center ">
+                <div class="container">
+                    <div class="row">
+                        <!-- nav-top left -->
+                        <div class="col-10 nav-top-left">
+                            <a href="tel: +8801759458961" class="nav-top-call text-dark"> <i class="text-red fa fa-phone" ></i> &nbsp; +8801759458961</a> 
+                            <a href="mailto: mycomputer44985@gmail.com " class="nav-top-mail ml-sm-5 text-dark"> <i class="text-red fa fa-envelope" ></i> &nbsp; mycomputer44985@gmail.com</a>
+                        </div>
+                        <!-- nav-top Right -->
+                        <div class="col-2 nav-top-right">
+                            <div class="d-flex justify-content-around">
+                                <a href="#"><i class=" fa fa-facebook"></i></a>
+                                <a href="#"><i class=" fa fa-instagram"></i></a>
+                                <a href="#"><i class=" fa fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="navbar">
+               <div class="container-fluid">
+                    <div class="row w-100 d-flex align-items-center">
+                        <div class="col-sm-1 d-flex align-items-center justify-content-center mb-4 mb-sm-0">
+                            <!-- logo -->
+                            <img src="resources/img/logo.png" alt="TFC" title="Tamai Food Cart" id="logo">
+                        </div>
+                        <div class="col-7 nav-menu-col">
+                            <!-- nav menus -->
+                            <div class="nav-menu">
+                                <ul>
+                                    <li><a href="#">Home</a></li>
+                                    <li class=" dropdown">
+                                        <!-- dropdown menu -->
+                                        <a href="#" class=" dropdown-btn">Menu <i class=" fa fa-angle-down"></i>
+                                        </a>
+                                        <!-- dropdown items -->
+                                        <div class="dropdown-items">
+                                            <ul>
+                                                <li><a href="#">Fast Food</a></li>
+                                                <li><a href="#">Dupurer Khabar</a></li>
+                                                <li><a href="#">Breakfast</a></li>
+                                                <li><a href="#">Dinner</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>                                   
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                    <li><a href="#">Galary</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-10 col-9 nav-extra-col">
+                            <div class="nav-extra">
+                                <!-- nav extra -->
+                                <ul>
+                                    <li>   
+                                        <form action="#" method="get" class="searchbar">
+                                            <!-- Search bar -->
+                                            <div class="search-group d-flex">
+                                                <input type="text" placeholder="Search food" class=" search-input">
+                                                <button type="submit" name="submit" class="fa fa-search search-btn">
+                                            </div>
+                                        </form>
+                                    </li>
+                                    <li title="user">
+                                        <button class="preventListener user" onclick="showModal()">
+                                            <i class=" fa fa-user"></i>                                            
+                                        </button>
+                                    </li>
+                                    <li title="cart">
+                                        <a href="#" class="cart">
+                                            <i class=" fa fa-shopping-basket"></i>
+                                            <div class="cart-number">2</div>
+                                        </a>
+                                    </li>
+                                    <li title="wishlist">
+                                        <a href="#" class="wishlist">
+                                            <i class=" fa fa-heart"></i>
+                                            <div class="wishlist-number">0</div>
+                                        </a>
+                                    </li>                                    
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-1 hamburger">
+                            <i class=" fa fa-bars"></i>
+                        </div>
+                    </div>
+               </div>
+            </div>
+        </nav>
+
+        <!--LOGIN modal box -->    
+        <div class="modal-box">
+            <!-- LOGIN FORM -->
+            <div class="login">
+                <form action="#" class="login-form">
+                    <h2 class=" text-center login-title">Login</h2>
+                    <input type="text" placeholder="Phone or Email">
+                    <input type="password" placeholder="Password">
+                    <input type="submit" name="submit" value="Login" class=" login-submit">
+                    <p class=" text-muted">Don't have an account? <a href="#" class="text-red">Sign up</a></p> 
+                    <p><a href="#" class=" text-red">Forgot Password</a></p>
+                </form>
+            </div>
+        </div>
+        <!-- modal box end -->
+        
+    </header>
+    <!-- header ends -->
+
+
+    <!--Main Starts  -->
+    <main>
+
+        <!--Landing page design starts   -->
+        <section id="land-page"> 
+            <div class="land-page">
+                <div class="owl-carousel owl-theme">
+                    <!--Item 1 -->
+                    <div class="item">                        
+                        <div class="land-item">                            
+                            <img src="resources/img/land-bg1.jpg" alt="" class="land-bg">
+
+                            <!-- land page overlay -->
+                            <div class="land-bg-overlay"></div>  
+
+                            <!-- Land Page text -->
+                            <div class="land-text">
+                                <div class="land-welcome">Welcome to Tamai Food Cart</div>
+                                <div class="land-title">
+                                    <h1>Get the Best and Fresh Fast Food and Delivery</h1>
+                                </div>
+                                <div class="land-info">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, ab.
+                                </div>
+                                <a href="#"  class=" land-btn">Shop Now</a>
+                            </div>
+                        </div>
+                    </div> 
+
+
+                    <!--Item 2 -->
+                    <div class="item">                        
+                        <div class="land-item">                            
+                            <img src="resources/img/land-bg2.jpg" alt="" class="land-bg">
+
+                            <!-- land page overlay -->
+                            <div class="land-bg-overlay"></div>  
+
+                            <!-- Land Page text -->
+                            <div class="land-text">
+                                <div class="land-welcome">Welcome to Tamai Food Cart</div>
+                                <div class="land-title">
+                                    <h1>Get the Best and Fresh Fast Food and Delivery</h1>
+                                </div>
+                                <div class="land-info">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, ab.
+                                </div>
+                                <a href="#"  class=" land-btn">Shop Now</a>
+                            </div>
+                        </div>
+                    </div> 
+                                  
+
+
+                    <!--Item 3 -->
+                    <div class="item">                        
+                        <div class="land-item">                            
+                            <img src="resources/img/land-bg3.jpg" alt="" class="land-bg">
+
+                            <!-- land page overlay -->
+                            <div class="land-bg-overlay"></div>  
+
+                            <!-- Land Page text -->
+                            <div class="land-text">
+                                <div class="land-welcome">Welcome to Tamai Food Cart</div>
+                                <div class="land-title">
+                                    <h1>Get the Best and Fresh Fast Food and Delivery</h1>
+                                </div>
+                                <div class="land-info">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, ab.
+                                </div>
+                                <a href="#"  class=" land-btn">Shop Now</a>
+                            </div>
+                        </div>
+                    </div> 
+                                  
+                </div>
+            </div>            
+        </section>                   
+        <!--Landing page design starts   -->
+
+
+        <!-- CATAGORIES section starts  -->
+        <section id="catagories">
+            <div class="container">
+                <div class="all-catagories">
+                    <!-- Title -->
+                    <div class="title">
+                       Our <span class="t-hl">Catagories</span>
+                    </div>
+
+                    <div class="owl-carousel owl-theme my-5">
+                        <div class="item">
+                            <!-- catagory -->
+                            <div class="catagory">
+                                <div class="catagory-img-div">
+                                    <img src="resources/img/catagory1.jpg" alt="catagory" class="catagory-img img-thumbnail ">
+                                </div>
+                                <div class="catagory-name">
+                                    <a href="https://google.com" class=" stretched-link">Pizza</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <!-- catagory -->
+                            <div class="catagory">
+                                <div class="catagory-img-div">
+                                    <img src="resources/img/catagory2.jpg" alt="catagory" class="catagory-img img-thumbnail ">
+                                </div>
+                                <div class="catagory-name">
+                                    <a href="https://google.com" class=" stretched-link">Burger</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <!-- catagory -->
+                            <div class="catagory">
+                                <div class="catagory-img-div">
+                                    <img src="resources/img/catagory3.jpg" alt="catagory" class="catagory-img img-thumbnail ">
+                                </div>
+                                <div class="catagory-name">
+                                    <a href="https://google.com" class=" stretched-link">Mutton Biriani</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <!-- catagory -->
+                            <div class="catagory">
+                                <div class="catagory-img-div">
+                                    <img src="resources/img/catagory4.jpg" alt="catagory" class="catagory-img img-thumbnail ">
+                                </div>
+                                <div class="catagory-name">
+                                    <a href="https://google.com" class=" stretched-link">Kacchi Biriani</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <!-- catagory -->
+                            <div class="catagory">
+                                <div class="catagory-img-div">
+                                    <img src="resources/img/catagory4.jpg" alt="catagory" class="catagory-img img-thumbnail ">
+                                </div>
+                                <div class="catagory-name">
+                                    <a href="https://google.com" class=" stretched-link">Kacchi Biriani</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <!-- catagory -->
+                            <div class="catagory">
+                                <div class="catagory-img-div">
+                                    <img src="resources/img/catagory4.jpg" alt="catagory" class="catagory-img img-thumbnail ">
+                                </div>
+                                <div class="catagory-name">
+                                    <a href="https://google.com" class=" stretched-link">Kacchi Biriani</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- CATAGORIES section Ends -->
+
+        <!-- deal / recommendation  -->
+        <section id="deal-recommend">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-3">
+                        <!-- DEAL FOR TODAY SECTION -->
+                        <section id="deal-today">
+                            <!-- Title -->
+                            <div class="title font-16 m-0">
+                                Deals for <span class="t-hl">Today</span>
+                            </div>
+                            <hr>
+                            <div class="owl-carousel owl-theme">
+                                <!-- deal item -->
+                                <div class="item">
+                                    <div class="deal-item">
+                                        <div class="deal-img-section">
+                                            <!-- image -->
+                                            <img src="resources/img/catagory1.jpg" alt="" class="deal-img">
+                                        </div>
+    
+                                        <div class="deal-info">
+                                            <p class="deal-catagory text-muted my-3">Pizza</p>
+                                            <p class=" deal-item-name my-2">Cheeze Pizza with Extra Cheeze</p>
+    
+                                            <div class="rating">
+                                                <!-- deal rating -->
+                                                <i class=" fa fa-star"></i>
+                                                <i class=" fa fa-star"></i>
+                                                <i class=" fa fa-star"></i>
+                                                <i class=" fa fa-star"></i>
+                                                <i class=" fa fa-star-o"></i>
+                                            </div>
+                                            <!-- product price -->
+                                            <div class="price">
+                                                <div class="del-price">৳480</div>
+                                                <div class="c-price">৳380</div>
+                                            </div>  
+                                            <!-- Expire deal  -->
+                                            <div class="expired-deal">
+                                                <p class="font-12 text-muted m-4">Expires in</p>
+                                                <!-- count down -->
+                                                <div class=" count-down">
+                                                    <div class="cd">
+                                                        <span class="cd-day">00</span>
+                                                        <p>Days</p>
+                                                    </div>                                                
+                                                    <div class="cd">
+                                                        <span class="cd-hour">00</span>
+                                                        <p>Hour</p>
+                                                    </div>                                            
+                                                    <div class="cd">
+                                                        <span class="cd-min">00</span>
+                                                        <p>Min</p>
+                                                    </div>                                            
+                                                    <div class="cd">
+                                                        <span class="cd-sec">00</span>
+                                                        <p>Sec</p>
+                                                    </div>                                
+                                                </div> 
+                                            </div>                   
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    <div class="deal-item">
+                                        <div class="deal-img-section">
+                                            <!-- image -->
+                                            <img src="resources/img/catagory1.jpg" alt="" class="deal-img">
+                                        </div>
+    
+                                        <div class="deal-info">
+                                            <p class="deal-catagory text-muted my-3">Pizza</p>
+                                            <p class=" deal-item-name my-2">Cheeze Pizza with Extra Cheeze</p>
+    
+                                            <div class="rating">
+                                                <!-- deal rating -->
+                                                <i class=" fa fa-star"></i>
+                                                <i class=" fa fa-star"></i>
+                                                <i class=" fa fa-star"></i>
+                                                <i class=" fa fa-star"></i>
+                                                <i class=" fa fa-star-o"></i>
+                                            </div>
+                                            <!-- product price -->
+                                            <div class="price">
+                                                <div class="del-price">৳480</div>
+                                                <div class="c-price">৳380</div>
+                                            </div>  
+                                            <!-- Expire deal  -->
+                                            <div class="expired-deal">
+                                                <p class="font-12 text-muted m-4">Expires in</p>
+                                                <!-- count down -->
+                                                <div class=" count-down">
+                                                    <div class="cd">
+                                                        <span class="cd-day">00</span>
+                                                        <p>Days</p>
+                                                    </div>                                                
+                                                    <div class="cd">
+                                                        <span class="cd-hour">00</span>
+                                                        <p>Hour</p>
+                                                    </div>                                            
+                                                    <div class="cd">
+                                                        <span class="cd-min">00</span>
+                                                        <p>Min</p>
+                                                    </div>                                            
+                                                    <div class="cd">
+                                                        <span class="cd-sec">00</span>
+                                                        <p>Sec</p>
+                                                    </div>                                
+                                                </div> 
+                                            </div>                   
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+ 
+                        </section>
+                        <!-- DEAL FOR TODAY SECTION ENDS -->
+                    </div>
+                    <div class="col-md-8">
+                        <!-- recommend for you -->
+                        <section id="recommend-item-section">
+                            <div class="title font-16 m-0">
+                                Recommendation for You
+                            </div>
+                            <hr>
+
+                            <div class="owl-carousel owl-theme">
+                                <div class="item">                                    
+                                    <!-- food item card -->
+                                    <div class="food-item">
+                                        <div class="item-img-div">
+                                            <img src="resources/img/catagory1.jpg" alt="" class="item-img">
+                                        </div>
+                                        <div class="item-info">
+                                            <div class="item-name">
+                                               Chessey pizza
+                                            </div>
+                                            <div class="item-more-info">
+                                                <div class="item-catagory">pizza</div>
+                                                <div class="rating">
+                                                    <!-- deal rating -->
+                                                    <i class=" fa fa-star"></i>
+                                                    <i class=" fa fa-star"></i>
+                                                    <i class=" fa fa-star"></i>
+                                                    <i class=" fa fa-star"></i>
+                                                    <i class=" fa fa-star-o"></i>
+                                                </div>
+                                                <div class="item-review">2144 Reviews</div>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="item-card-footer">
+                                            <!-- item card footer -->
+                                            <form action="#" method="post">
+                                            <div class="pri-quan">
+                                                    <!-- item price -->
+                                                    <div class="price">
+                                                        <div class="del-price">৳480</div>
+                                                        <div class="c-price">৳380</div>
+                                                    </div>  
+                                                    <!-- item quantity -->
+                                                    <div class="quantity">
+                                                        <i class=" fa fa-minus quan-down"></i>
+                                                        <input type="number"  value="2" class="quan-input">
+                                                        <i class=" fa fa-plus quan-up"></i>                                                   
+                                                    </div>
+                                            </div>
+                                                <hr>
+                                                <!-- item card buttons -->
+                                                <div class="item-btns">
+                                                    <a href="#" class="item-vc-btn">View Cart</a>
+                                                    <input type="submit" value="Add To Cart" class=" item-ac-btn"> 
+                                                </div>                                       
+                                            </form>                                    
+                                        </div>
+                                    </div>
+                                </div> 
+                                
+                                <div class="item">                                    
+                                    <!-- food item card -->
+                                    <div class="food-item">
+                                        <div class="item-img-div">
+                                            <img src="resources/img/catagory2.jpg" alt="" class="item-img">
+                                        </div>
+                                        <div class="item-info">
+                                            <div class="item-name">
+                                                veg burger
+                                            </div>
+                                            <div class="item-more-info">
+                                                <div class="item-catagory">Burger</div>
+                                                <div class="rating">
+                                                    <!-- deal rating -->
+                                                    <i class=" fa fa-star"></i>
+                                                    <i class=" fa fa-star"></i>
+                                                    <i class=" fa fa-star"></i>
+                                                    <i class=" fa fa-star"></i>
+                                                    <i class=" fa fa-star-o"></i>
+                                                </div>
+                                                <div class="item-review">2144 Reviews</div>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="item-card-footer">
+                                            <!-- item card footer -->
+                                            <form action="#" method="post">
+                                            <div class="pri-quan">
+                                                    <!-- item price -->
+                                                    <div class="price">
+                                                        <div class="del-price">৳480</div>
+                                                        <div class="c-price">৳380</div>
+                                                    </div>  
+                                                    <!-- item quantity -->
+                                                    <div class="quantity">
+                                                        <i class=" fa fa-minus quan-down"></i>
+                                                        <input type="number"  value="2" class="quan-input">
+                                                        <i class=" fa fa-plus quan-up"></i>                                                   
+                                                    </div>
+                                            </div>
+                                                <hr>
+                                                <!-- item card buttons -->
+                                                <div class="item-btns">
+                                                    <a href="#" class="item-vc-btn">View Cart</a>
+                                                    <input type="submit" value="Add To Cart" class=" item-ac-btn"> 
+                                                </div>                                       
+                                            </form>                                    
+                                        </div>
+                                    </div>
+                                </div> 
+
+                                <div class="item">                                    
+                                    <!-- food item card -->
+                                    <div class="food-item">
+                                        <div class="item-img-div">
+                                            <img src="resources/img/catagory3.jpg" alt="" class="item-img">
+                                        </div>
+                                        <div class="item-info">
+                                            <div class="item-name">
+                                                Mutton Biriani
+                                            </div>
+                                            <div class="item-more-info">
+                                                <div class="item-catagory">Biriyani</div>
+                                                <div class="rating">
+                                                    <!-- deal rating -->
+                                                    <i class=" fa fa-star"></i>
+                                                    <i class=" fa fa-star"></i>
+                                                    <i class=" fa fa-star"></i>
+                                                    <i class=" fa fa-star"></i>
+                                                    <i class=" fa fa-star-o"></i>
+                                                </div>
+                                                <div class="item-review">2144 Reviews</div>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="item-card-footer">
+                                            <!-- item card footer -->
+                                            <form action="#" method="post">
+                                            <div class="pri-quan">
+                                                    <!-- item price -->
+                                                    <div class="price">
+                                                        <div class="del-price">৳480</div>
+                                                        <div class="c-price">৳380</div>
+                                                    </div>  
+                                                    <!-- item quantity -->
+                                                    <div class="quantity">
+                                                        <i class=" fa fa-minus quan-down"></i>
+                                                        <input type="number"  value="2" class="quan-input">
+                                                        <i class=" fa fa-plus quan-up"></i>                                                   
+                                                    </div>
+                                            </div>
+                                                <hr>
+                                                <!-- item card buttons -->
+                                                <div class="item-btns">
+                                                    <a href="#" class="item-vc-btn">View Cart</a>
+                                                    <input type="submit" value="Add To Cart" class=" item-ac-btn"> 
+                                                </div>                                       
+                                            </form>                                    
+                                        </div>
+                                    </div>
+                                </div> 
+                                
+                                <div class="item">                                    
+                                    <!-- food item card -->
+                                    <div class="food-item">
+                                        <div class="item-img-div">
+                                            <img src="resources/img/catagory4.jpg" alt="" class="item-img">
+                                        </div>
+                                        <div class="item-info">
+                                            <div class="item-name">
+                                               Kacchi Biriyani
+                                            </div>
+                                            <div class="item-more-info">
+                                                <div class="item-catagory">Biriani</div>
+                                                <div class="rating">
+                                                    <!-- deal rating -->
+                                                    <i class=" fa fa-star"></i>
+                                                    <i class=" fa fa-star"></i>
+                                                    <i class=" fa fa-star"></i>
+                                                    <i class=" fa fa-star"></i>
+                                                    <i class=" fa fa-star-o"></i>
+                                                </div>
+                                                <div class="item-review">2144 Reviews</div>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="item-card-footer">
+                                            <!-- item card footer -->
+                                            <form action="#" method="post">
+                                            <div class="pri-quan">
+                                                    <!-- item price -->
+                                                    <div class="price">
+                                                        <div class="del-price">৳480</div>
+                                                        <div class="c-price">৳380</div>
+                                                    </div>  
+                                                    <!-- item quantity -->
+                                                    <div class="quantity">
+                                                        <i class=" fa fa-minus quan-down"></i>
+                                                        <input type="number"  value="2" class="quan-input">
+                                                        <i class=" fa fa-plus quan-up"></i>                                                   
+                                                    </div>
+                                            </div>
+                                                <hr>
+                                                <!-- item card buttons -->
+                                                <div class="item-btns">
+                                                    <a href="#" class="item-vc-btn">View Cart</a>
+                                                    <input type="submit" value="Add To Cart" class=" item-ac-btn"> 
+                                                </div>                                       
+                                            </form>                                    
+                                        </div>
+                                    </div>
+                                </div> 
+                                
+                                
+                            </div>
+
+
+
+                        </section>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+    <!--Main Ends  -->
+        
+        
+  
+
+
+
+    <div style="height: 50vh; width: 100vw; background-color: rgba(127, 255, 212, 0.315);"></div>
+        
+        
+
+
+<!-- ================javascript links=================== -->
+    <!-- vendor js -->
+    <script src="vendor/js/jquery.min.js"></script>
+    <script src="vendor/js/popper.min.js"></script>
+    <script src="vendor/js/html5shiv.min.js"></script>
+    <script src="vendor/js/respond.min.js"></script>
+
+    <!-- owl carousel -->
+    <script src="vendor/js/owl.carousel.min.js"></script>
+    <!-- DATA AOS -->
+    <script src="vendor/js/aos.js"></script>
+
+    <!-- custom js -->
+    <script src="resources/js/main.js"></script>
+
+
+</body>
+</html>
