@@ -84,6 +84,46 @@ $('#catagories .owl-carousel').owlCarousel({
 
 
 
+
+
+
+
+
+/* ====================================== */
+        /*  FEATURES  Carousel  */
+/* ====================================== */
+
+
+$('#feature .owl-carousel').owlCarousel({
+    loop:true,
+    nav:false,
+    margin:10,
+    dots:false,
+    autoplay:true,
+    autoplayTimeout:4000,
+    autoplayHoverPause:true,
+    responsive:{
+        0:{
+            items:1,       
+        },
+        425:{
+            items: 2,
+        },        
+        768:{
+            items: 3,
+        },
+        992:{
+            items:5,
+        }
+    }
+})
+
+
+
+
+
+
+
 /* ====================================== */
         /*  DEAL FOR TODAY CAROUSEL  */
 /* ====================================== */
@@ -167,34 +207,6 @@ var x = setInterval(function() {
 /* ====================================== */
         /*PRODUCT QUANTITY BUTTON */
 /* ====================================== */
-// var quanUp = document.querySelector(".quan-up");
-// var quanDown = document.querySelector(".quan-down");
-// var quanInput = document.querySelector(".quan-input");
-
-
-// var quantity = quanInput.value;
-
-// quanUp.addEventListener('click', function(){quanValUp();});
-// quanDown.addEventListener('click',function(){quanValDown();});
-
-// function quanValUp(){
-//     quantity++;    
-//     quanInput.value = quantity;
-//     if(quantity >= 99){
-//         quantity = quantity - 1;
-   
-//     }
-// };
-
-// function quanValDown(){
-//     quantity--;    
-//     quanInput.value = quantity;
-//     if(quantity <= 0){
-//         quantity = quantity + 1;
-//     }
-// };
-
-
 
 // =======================================================
 
@@ -206,41 +218,42 @@ var x = setInterval(function() {
 
 
 
-// var fcardLen = document.querySelectorAll(".food-item");
+// var fcardLen = document.querySelectorAll(".food-item").length;
 
 // for(var i=0; i<fcardLen; i++){
 //     var quantity = quanInput[i].value;
 
+//     quanUp[i].addEventListener('click', function(){
+//         quanValUp(i);
+//     });
 
-//     quanUp[i].addEventListener('click', function(){quanValUp();});
-//     quanDown[i].addEventListener('click',function(){quanValDown();});
+//     quanDown[i].addEventListener('click',function(){
+//         quanValDown();        
+//     });
 // }
 
 
 
 
-// function quanValUp(){
+// function quanValUp(){  
 
-//     for(var i=0; i<fcardLen; i++){
-//         quantity++;    
-//         quanInput[i].value = quantity;
-//         if(quantity >= 99){
-//             quantity = quantity - 1;
-       
-//         }
-//     }
-   
+//     quantity++;    
+//     quanInput[i].value = quantity;
+//     // if(quantity >= 99){
+//     //     quantity = quantity - 1;
+//     // }
+
 // };
 
 // function quanValDown(){
 
-//     for(var i=0; i<fcardLen; i++){
-//         quantity--;    
-//         quanInput[i].value = quantity;
-//         if(quantity <= 0){
-//             quantity = quantity + 1;
-//         }
-//     }
+//     // for(var i=0; i<fcardLen; i++){
+//     //     quantity--;    
+//     //     quanInput[i].value = quantity;
+//     //     if(quantity <= 0){
+//     //         quantity = quantity + 1;
+//     //     }
+//     // }
 
 // };
 
@@ -253,10 +266,9 @@ var quanDown = document.querySelectorAll(".quan-down");
 var quanInput = document.querySelectorAll(".quan-input");
 
 // number of all Item card 
-var fcardLen = document.querySelectorAll(".food-item");
+var fcardLen = document.querySelectorAll(".food-item").length;
 var quantity = [];
 
-console.log(quantity.length);
 
 for(var i=0; i<fcardLen; i++){
     
@@ -280,7 +292,7 @@ for(var i=0; i<fcardLen; i++){
 
 function quanValUp(){
     for(var i=0; i<fcardLen; i++){
-        quantity[i]++;    
+        quantity[i]++;
         quanInput[i].value = quantity[i];
         if(quantity[i] >= 99){
             quantity[i] = quantity[i] - 1;       
@@ -312,7 +324,7 @@ function quanValDown(){
 
 $('#recommend-item-section .owl-carousel').owlCarousel({
     loop:true,
-    nav:true,
+    nav:false,
     margin:20,
     dots:true,
     responsiveClass:true,
@@ -325,6 +337,21 @@ $('#recommend-item-section .owl-carousel').owlCarousel({
     ],
     responsive:{
         0:{
+            items:1,
+        },
+        400:{
+            items:2,
+        },
+        600:{
+            items:3,
+        },
+        768:{
+            items:2,
+        },
+        992:{
+            items:3,
+        },
+        1200:{
             items:4,
         }
     }

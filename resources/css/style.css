@@ -3,7 +3,8 @@
 /* ================================== */
 /* GOOGLE FONTS */
 /* font-family: 'Alfa Slab One', cursive;
-font-family: 'Lato', sans-serif; */
+font-family: 'Lato', sans-serif; 
+font-family: 'Rubik', sans-serif;*/
 
 *{
     margin: 0;   
@@ -24,8 +25,8 @@ body{
 /* REusable components */
 
 h1,h2,h3,h4,h5,h6{
-    font-family: 'Alfa Slab One', cursive;
-    font-weight: 400;
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
 }
 
 ul{
@@ -62,7 +63,8 @@ input{
 }
 
 .title{
-    font-family: 'Alfa Slab One', cursive;
+    font-family: 'Rubik', sans-serif;
+    font-weight: bolder;
     font-size: 3rem;
     position: relative;
     width: fit-content;
@@ -626,6 +628,7 @@ nav{
 }
 
 .land-title h1{
+    font-family: 'Alfa Slab One', cursive;
     font-size: 5rem;
 }
 
@@ -660,7 +663,7 @@ nav{
             /*  ALL CATAROGIES */
 /* ================================== */
 #catagories{
-    margin: 10rem 0;
+    margin: 8rem 0;
 }
 
 #catagories .item{
@@ -711,13 +714,70 @@ nav{
 
 
 
+
+
+/* ======================================= */
+            /*  FEATURE SECTION DESIGN  */
+/* ======================================= */
+
+#feature{
+    padding: 2rem 0;
+    margin-bottom: 10rem;
+}
+
+#feature .item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature-box{
+    border: 1px solid transparent;
+    display:flex;
+    justify-content: flex-start;
+    
+}
+
+.feature-box .feature-icon{
+    color: #D51C22;
+    font-size: 3rem;
+}
+
+.feature-box .feature-info p, 
+.feature-box .feature-info h5{ 
+    margin: 0;
+    padding: 0;
+    margin-bottom: .2rem;
+}
+
+.feature-info{
+    padding-left: 1.5rem;
+}
+
+.feature-info p{
+    font-size: 1.2rem;
+    color: #6c757d;
+}
+
+.feature-info h5{
+    text-transform: capitalize;    
+}
+
+
+
+
+
+
+
+
 /* ======================================= */
             /*  DEAL FOR TODAY   */
 /* ======================================= */
 
 #deal-today{
     border: 1px solid #D51C22;
-    padding: 0 2rem;
+    padding: 1rem 2rem;
+    border-radius: .5rem;
 }
 
 .deal-info{
@@ -775,4 +835,11 @@ nav{
 }
 #deal-today .owl-nav .owl-next{      
     right: -27px;
+}
+
+
+#recommend-item-section .item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
