@@ -208,8 +208,6 @@ var x = setInterval(function() {
         /*PRODUCT QUANTITY BUTTON */
 /* ====================================== */
 
-// =======================================================
-
 
 
 // var quanUp = document.querySelectorAll(".quan-up");
@@ -257,59 +255,6 @@ var x = setInterval(function() {
 
 // };
 
-
-
-// ===================================
-
-var quanUp = document.querySelectorAll(".quan-up");
-var quanDown = document.querySelectorAll(".quan-down");
-var quanInput = document.querySelectorAll(".quan-input");
-
-// number of all Item card 
-var fcardLen = document.querySelectorAll(".food-item").length;
-var quantity = [];
-
-
-for(var i=0; i<fcardLen; i++){
-    
-    quantity[i] = quanInput[i].value;
-   
-
-    // Increase quantity value
-    quanUp[i].addEventListener('click', function(){
-        quanValUp();
-    });
-
-
-    // decrease quantity value
-    quanDown[i].addEventListener('click',function(){
-        quanValDown();
-    });
-}
-
-
-
-
-function quanValUp(){
-    for(var i=0; i<fcardLen; i++){
-        quantity[i]++;
-        quanInput[i].value = quantity[i];
-        if(quantity[i] >= 99){
-            quantity[i] = quantity[i] - 1;       
-        }
-    }   
-};
-
-
-function quanValDown(){
-    for(var i=0; i<fcardLen; i++){
-        quantity[i]--;    
-        quanInput[i].value = quantity[i];
-        if(quantity[i] <= 0){
-            quantity[i] = quantity[i] + 1;       
-        }
-    }   
-};
 
 
 
