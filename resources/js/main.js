@@ -70,14 +70,26 @@ $('#catagories .owl-carousel').owlCarousel({
         0:{
             items:1,       
         },
-        425:{
+        400:{
             items: 2,
         },        
-        768:{
+        600:{
             items: 3,
         },
+        768:{
+            items: 4,
+        },
         992:{
+            items:4,
+        },
+        1100:{
             items:5,
+        },
+        1240:{
+            items:6,
+        },
+        1400:{
+            items:7,
         }
     }
 })
@@ -282,7 +294,7 @@ $('#recommend-item-section .owl-carousel').owlCarousel({
     ],
     responsive:{
         0:{
-            items:1,
+            items:2,
         },
         400:{
             items:2,
@@ -291,13 +303,13 @@ $('#recommend-item-section .owl-carousel').owlCarousel({
             items:3,
         },
         768:{
-            items:2,
-        },
-        992:{
             items:3,
         },
-        1200:{
+        992:{
             items:4,
+        },
+        1200:{
+            items:5,
         }
     }
 })

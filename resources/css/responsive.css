@@ -1,4 +1,41 @@
+
+@media (max-width: 1024px){
+
+    /* product  card */
+    .food-item{  /*-_-*/  
+        width: 20rem;
+    }
+
+    .item-img-div{ /*-_-*/
+        height: 14rem; 
+    }
+
+    .item-name{ 
+        font-size: 1.5rem;
+    }
+
+    .item-catagory{ /*-_-*/
+        font-size: 1.3rem;
+    }
+    
+    .item-rate{ /*-_-*/
+        font-size: 1.1rem;
+    }
+
+    .item-rate .rating i{ /*-_-*/
+        font-size: 1.1rem;
+    }
+    /* product  card Ends */
+}
+
+
+
+
 @media (max-width: 991px) {
+
+    #logo{
+        padding: 1rem;
+    }
 
     .nav-menu-col{
         display: none;
@@ -14,6 +51,13 @@
         width: 100%;
         height: 100%;
     }
+
+    /* ad */
+    .ad{
+        margin: .2rem  0;
+        padding: 0 1rem;
+    }
+    
 }
 
 /* ================================ */
@@ -48,12 +92,70 @@
     }
 
     .land-title h1{
-        font-size: 4rem;
+        font-size: 3.5rem;
     }
 
 
     #recommend-item-section{
         margin-top: 5rem;
+    }
+
+
+    /* product  card */
+    .food-item{  /*-_-*/  
+        width: 18rem;
+    }
+
+    .item-img-div{ /*-_-*/
+        height: 13rem; 
+    }
+
+    .item-name{ 
+        font-size: 1.4rem;
+    }
+
+    .item-catagory{ /*-_-*/
+        font-size: 1.3rem;
+    }
+    
+    .item-rate{ /*-_-*/
+        font-size: 1.1rem;
+    }
+
+    .item-rate .rating i{ /*-_-*/
+        font-size: 1.1rem;
+    }
+    /* product  card Ends */
+
+    .see-more-btn{
+        font-size: 1.3rem;
+        padding:  .5rem 2rem;
+        border-radius: .5rem;
+    }
+    
+    .ad{
+        margin: 2rem 0;
+    }
+
+    .know-right{
+        display: none;
+    }
+
+    .know-info h1{
+        font-size: 3rem;
+    }
+
+    .know-phone i{
+        color: #D51C22;
+        padding: 1rem;
+        font-size: 2rem;
+    }
+    
+    .know-phone{
+        padding: 1rem 4rem;
+        font-size: 1.5rem;
+        color: black;
+        font-weight: bold;
     }
 
 }
@@ -63,29 +165,66 @@
             /* MAX 600 */
 /* ================================ */
 @media (max-width: 600px) {
-
-    .nav-extra ul li{ 
-        padding: 1rem;
-    }
-
-    .search-input{
-        width: 10rem;
-    }
-
+ 
     .land-welcome{      
         word-spacing: 0;
         font-size: 1.2rem;        
     }
+
+
+    /* product  card */
+    .item-container{
+        display: flex;
+        flex-wrap: wrap ;
+        justify-content: space-around;
+    }
+    
+    .food-item{  /*-_-*/  
+        width: 17rem;
+    }
+
+    .item-img-div{ /*-_-*/
+        height: 12rem; 
+    }
+
+    .item-name{ 
+        font-size: 1.2rem;
+    }
+
+    .item-catagory{ /*-_-*/
+        font-size: 1.1rem;
+    }
+    
+    .food-item .price{ /*-_-*/
+        margin: 0 ;
+        font-size: 1.3rem;
+    }
+
+    .item-rate{ /*-_-*/
+        font-size: 1.1rem;
+    }
+
+    .item-rate .rating i{ /*-_-*/
+        font-size: 1rem;
+    }
+    /* product  card Ends */
+
+
 }
 
 /* ================================ */
             /* MAX 576 */
 /* ================================ */
 @media (max-width: 576px) {
+    .land-title h1{
+        font-size: 3rem;
+    }
 
-    #logo{
-        height: 6rem;
-    }    
+    .navbar .row{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
 }
 
 /* ================================ */
@@ -102,11 +241,9 @@
         font-size: 3.5rem;
     }
 
-
     .land-info{
         font-size: 1.1rem;
     }
-
  
 }
 
@@ -117,7 +254,7 @@
 @media (max-width: 500px) {
 
     .search-input{
-        width: 8rem;
+        width: 10rem;
     }
 
     /* LAND PAGE */
@@ -155,6 +292,36 @@
         font-size: 1.2rem;
     }
 
+
+    /* know us section */
+    .know-info h1{
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .know-info p{
+        font-size: 1.4rem;
+    }
+
+    .know-phone i{
+        color: #D51C22;
+        padding: 1rem;
+        font-size: 2rem;
+    }
+    
+    .know-phone{
+        padding: 1rem 2rem;
+        font-size: 1.4rem;
+        color: black;
+        font-weight: bold;
+    }
+
+    .know-bottom .def-btn{
+        padding: .8rem 3rem;
+        font-size: 1.4rem;
+    }
+    /* know us section Ends */
+
 }
 
 
@@ -169,7 +336,7 @@
     }
 
     #logo{
-        height: 6rem;
+        height: 8rem;
         z-index: 5;
     }
 
@@ -177,18 +344,12 @@
         padding: 0;
     }
 
-    #logo{
-        height: 5rem;
-        z-index: 5;
-    }
-
-
     .nav-extra ul li{ 
         padding: 1rem;
     }
 
     .search-input{
-        width: 5rem;
+        width: 7rem;
         height: 2rem;
         font-size: 80%;
         padding: .5rem;
@@ -198,7 +359,7 @@
     .wishlist-number,
     .cart-number,
     button{
-        font-size: 80%;
+        font-size: 90%;
         padding: 0;
     }
 
@@ -230,6 +391,44 @@
         font-size: 1.4rem;
     }
 
+
+    /* product  card */
+    .title{
+        padding-left: 1rem;
+    }
+
+    .food-item{  /*-_-*/  
+        width: 16rem;
+    }
+
+    .item-img-div{ /*-_-*/
+        height: 11rem; 
+    }
+
+    .item-name{ 
+        font-size: 1.2rem;
+    }
+
+    .item-catagory{ /*-_-*/
+        font-size: 1.1rem;
+    }
+    
+    .food-item .price{ /*-_-*/
+        margin: 0 ;
+        font-size: 1.3rem;
+    }
+
+    .item-rate{ /*-_-*/
+        font-size: 1rem;
+    }
+
+    .item-rate .rating i{ /*-_-*/
+        font-size: 1rem;
+    }
+    /* product  card Ends */
+
+
+    
 }
 
 
@@ -257,5 +456,47 @@
     #land-page .owl-nav .owl-next{
         right: 35%;
     }
+
+
+    /* product  card */
+    
+    .food-item{  /*-_-*/  
+        width: 15rem;
+    }    
+    /* product  card Ends */
+
+    /* know us section */
+    .know-left{
+        padding-left: 4rem;
+    }
+
+    .know-info h1{
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .know-info p{
+        font-size: 1.3rem;
+    }
+
+    .know-phone i{
+        color: #D51C22;
+        padding: 1rem;
+        font-size: 2rem;
+    }
+    
+    .know-phone{
+        padding: 1rem 1rem;
+        font-size: 1.2rem;
+        color: black;
+        font-weight: bold;
+    }
+
+    .know-bottom .def-btn{
+        padding: .8rem 1.5rem;
+        font-size: 1.2rem;
+    }
+    /* know us section Ends */
+
  
 }
