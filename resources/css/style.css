@@ -404,7 +404,7 @@ input{
 }
 
 .owl-carousel .item-catagory{
-    font-size: 80%;
+    font-size: 60%;
 }
 
 .food-item .price{ /*-_-*/
@@ -1083,6 +1083,11 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0;
+}
+
+.know-left{
+    width: fit-content;
 }
 
 .know-info h1{
@@ -1126,9 +1131,6 @@ nav{
     width: 70vh;
     border-radius: 1rem;
 }
-
-
-
 
 
 
@@ -1209,3 +1211,70 @@ nav{
     border-color: white;
     background-color: #D51C22;
 }
+
+
+
+
+
+
+
+
+
+
+/* ============================================= */
+        /*  News Letter  SECTION */
+/* ============================================= */
+
+#news-letter [class*="col-"]{
+    margin-bottom: 2rem;
+}
+
+
+#news-letter .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#news-letter .nl-text i{
+    font-size: 4.5rem;
+    padding-right: 3rem;
+    padding-left: 1rem;
+    color: #D51C22;
+}
+
+#news-letter .nl-text p{
+    color: #6c757d;
+}
+
+#news-letter input[type=email]{
+    border: 1px solid rgb(213, 28, 34,.2);
+    border-top-left-radius: .5rem;
+    border-end-start-radius: .5rem;
+    width: 60%;
+    border-right: none;
+}
+
+#news-letter input[type=submit]{
+    border: 1px solid rgb(213, 28, 34);
+    background-color: #D51C22;
+    color: white;
+    border-top-right-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+}
+
+.nl-links i{
+    color: black;
+    padding: .6rem;
+    transition: .5s;
+    font-size: 1.5rem;
+}
+
+.nl-links i:hover{
+    color: #D51C22;
+}
+
+
+
+

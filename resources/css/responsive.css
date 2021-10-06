@@ -328,6 +328,23 @@
     }
     /* know us section Ends */
 
+
+    #news-letter .nl-text i{
+        font-size: 3.5rem;
+        padding-right: 3rem;
+        color: #D51C22;
+    }
+
+    #news-letter .nl-text h1{
+        font-size: 2rem;
+        text-align: left;
+    }
+
+    #news-letter .nl-text p{
+        font-size: 1.4rem;
+        text-align: left;
+    }
+    
 }
 
 
@@ -473,10 +490,6 @@
     /* product  card Ends */
 
     /* know us section */
-    .know-left{
-        padding-left: 4rem;
-    }
-
     .know-info h1{
         font-size: 2.5rem;
         margin-bottom: 1rem;

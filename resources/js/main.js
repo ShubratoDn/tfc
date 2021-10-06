@@ -278,7 +278,7 @@ var x = setInterval(function() {
 
 
 /* ====================================== */
-        /*  Product Recommendation  */
+        /*  ARTICLE  */
 /* ====================================== */
 
 $('#our-article .owl-carousel').owlCarousel({
@@ -322,7 +322,7 @@ $('#our-article .owl-carousel').owlCarousel({
 $('#recommend-item-section .owl-carousel').owlCarousel({
     loop:true,
     nav:false,
-    margin:20,
+    margin:10,
     dots:true,
     responsiveClass:true,
     autoplay:true,
