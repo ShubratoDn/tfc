@@ -22,8 +22,12 @@ body{
     font-family: 'Lato', sans-serif;
 }
 
-/* REusable components */
+main{
+    background-color: white;
+    z-index: 1;
+}
 
+/* REusable components */
 h1,h2,h3,h4,h5,h6{
     font-family: 'Rubik', sans-serif;
     font-weight: bold;
@@ -1262,6 +1266,14 @@ nav{
     color: white;
     border-top-right-radius: .5rem;
     border-bottom-right-radius: .5rem;
+    border-left: none;
+    transition: .5s;
+}
+#news-letter input[type=submit]:hover{
+    border: 1px solid rgb(213, 28, 34,.2);
+    background-color: white;
+    color: #D51C22;
+    border-left: none;
 }
 
 .nl-links i{
@@ -1274,6 +1286,76 @@ nav{
 .nl-links i:hover{
     color: #D51C22;
 }
+
+
+
+
+
+
+
+/* ================================= */
+            /*  FOOTER */
+/* ================================= */
+
+
+#footer{
+    min-height:50vh;
+}
+
+.footer-body{
+    background-color: rgb(20, 20, 20);
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    z-index: -1;
+}
+
+#footer h1{
+    color: white;
+    margin-bottom:2rem ;
+    text-transform: uppercase;
+}
+
+#footer  p{
+    color:  white;
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: .5rem;
+}
+
+#footer a{
+    color: #c9c9c9;
+}
+
+#footer a:hover{
+    color:  #D51C22;
+}
+
+#footer .footer-end{
+    background-color: rgb(44, 44, 44);
+    color: rgb(168, 168, 168);
+}
+
+#footer .social-links a{
+    font-size: 1.6rem;
+    padding: 1rem;
+}
+
+#footer .social-links i:hover{
+    color: #D51C22;
+}
+
+
+footer hr{
+    background-color: white;
+    opacity: .5;
+    margin: 0;
+}
+
+
+
+
+
 
 
 

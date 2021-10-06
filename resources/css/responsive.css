@@ -26,6 +26,12 @@
         font-size: 1.1rem;
     }
     /* product  card Ends */
+    
+
+    #footer{
+        height:65vh;
+    }
+
 }
 
 
@@ -158,6 +164,12 @@
         font-weight: bold;
     }
 
+
+    
+    #footer{
+        height:90vh;
+    }
+
 }
 
 
@@ -224,6 +236,10 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
+    }
+
+    #footer{
+        height:100vh;
     }
 }
 

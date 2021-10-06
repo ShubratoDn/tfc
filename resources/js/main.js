@@ -360,5 +360,17 @@ $('#recommend-item-section .owl-carousel').owlCarousel({
 
 
 
+/* ====================================== */
+        /*  footer  */
+/* ====================================== */
+var footer = document.querySelector("footer");
+
+
+
+
+
+
+
+
 
 
