@@ -53,6 +53,8 @@ $('#land-page .owl-carousel').owlCarousel({
 
 
 
+
+
 /* ====================================== */
         /*  CATGORIES  Carousel  */
 /* ====================================== */
@@ -266,6 +268,44 @@ var x = setInterval(function() {
 //     // }
 
 // };
+
+
+
+
+
+
+
+
+
+/* ====================================== */
+        /*  Product Recommendation  */
+/* ====================================== */
+
+$('#our-article .owl-carousel').owlCarousel({
+    loop:true,
+    nav:false,
+    margin:20,
+    dots:true,
+    responsiveClass:true,
+    autoplay:true,
+    autoplayTimeout:2000,
+    autoplayHoverPause:true,
+    navText:[
+        prevIcon,
+        nextIcon
+    ],
+    responsive:{
+        0:{
+            items:1,
+        },
+        768:{
+            items:2,
+        },
+        1180:{
+            items: 3
+        }
+    }
+})
 
 
 

@@ -245,6 +245,10 @@
         font-size: 1.1rem;
     }
  
+    .single-ad .ad-img{
+        height: 20vh;
+    }
+
 }
 
 
@@ -270,6 +274,8 @@
         font-size: 1.5rem;
         width: 3rem;
         height: 3rem;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     #land-page .owl-nav .owl-prev{
@@ -370,25 +376,26 @@
 
 
     /* LAND PAGE */
-    .land-item{
-        height: 40vh;
-    }
-
-    .land-welcome{
+    .land-welcome{      
+        word-spacing: 0;
         font-size: 1.1rem;        
     }
 
     .land-title h1{
-        font-size: 3.0rem;
+        font-size: 2rem;
     }
 
     .land-info{
         font-size: 1.1rem;
     }
 
+    .land-item{
+        height: 40vh;
+    }
+
     .land-btn{
-        padding: 1rem 2.0rem;
-        font-size: 1.4rem;
+        padding: .6rem 2.0rem;
+        font-size: 1.2rem;
     }
 
 
@@ -499,4 +506,9 @@
     /* know us section Ends */
 
  
+    .title{
+        font-size: 2rem;
+    }
+
+
 }

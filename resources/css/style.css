@@ -986,6 +986,10 @@ nav{
 /* ======================================= */
             /*  DEAL FOR TODAY   */
 /* ======================================= */
+#deal-recommend{
+    overflow: hidden;
+    width: 100vw;
+}
 
 #deal-today{
     border: 1px solid #D51C22;
@@ -1125,3 +1129,83 @@ nav{
 
 
 
+
+
+
+
+
+
+/* ============================================= */
+        /*  Article  SECTION */
+/* ============================================= */
+#our-article{
+    margin: 6rem 0;
+}
+
+#our-article .item{
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#our-article .title{
+    margin: 4rem auto;
+}
+
+.article{
+    max-width: 40rem;
+    background-color: #E9ECEF;
+    position: relative;
+    border-radius: 1rem;
+}
+
+.article-img{
+    height: 25rem;
+    width: 100%;
+}
+
+.article-shorts{
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 15%;
+    margin-bottom: 2rem;
+}
+
+.article-shorts i{
+    color: #D51C22;
+}
+
+.article-body{
+    text-align: center;
+    padding: 1rem 1rem;
+    padding-bottom: 4rem;
+}
+
+
+.article-more{
+    color: #D51C22;
+    position: absolute;
+    bottom: -1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 1px solid #D51C22;
+    height: 3rem;
+    width: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: white;
+    transition: background-color .5s; 
+}
+
+.article-more:hover{
+    color: white;
+    text-decoration: none;
+    border-color: white;
+    background-color: #D51C22;
+}
