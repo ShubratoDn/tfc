@@ -25,12 +25,7 @@
     .item-rate .rating i{ /*-_-*/
         font-size: 1.1rem;
     }
-    /* product  card Ends */
-    
-
-    #footer{
-        height:65vh;
-    }
+    /* product  card Ends */  
 
 }
 
@@ -65,6 +60,7 @@
     }
     
 }
+
 
 /* ================================ */
             /* TAB SIZE */
@@ -165,11 +161,6 @@
     }
 
 
-    
-    #footer{
-        height:90vh;
-    }
-
 }
 
 
@@ -237,10 +228,7 @@
         justify-content: space-around;
         align-items: center;
     }
-
-    #footer{
-        height:100vh;
-    }
+    
 }
 
 /* ================================ */
@@ -537,6 +525,11 @@
  
     .title{
         font-size: 2rem;
+    }
+
+
+    footer .row{
+        margin: 0;
     }
 
 

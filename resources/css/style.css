@@ -6,6 +6,11 @@
 font-family: 'Lato', sans-serif; 
 font-family: 'Rubik', sans-serif;*/
 
+/* [class*="col-"]{
+    border: 1px solid royalblue;
+} */
+
+
 *{
     margin: 0;   
     padding: 0;
@@ -20,11 +25,12 @@ html{
 body{
     font-size: 1.6rem;
     font-family: 'Lato', sans-serif;
+    width: 100vw;
+    overflow-x: hidden;
 }
 
-main{
-    background-color: white;
-    z-index: 1;
+main{    
+    width: 100vw;     
 }
 
 /* REusable components */
@@ -273,6 +279,7 @@ input{
     transition: .3s;
     overflow: hidden;
     border-radius: .5rem;
+    z-index: 10;
 }
 
 .see-more-btn:hover{
@@ -1293,21 +1300,20 @@ nav{
 
 
 
+
 /* ================================= */
             /*  FOOTER */
 /* ================================= */
-
-
 #footer{
-    min-height:50vh;
+    background-color:red;
+    width: 100vw;
+    overflow: hidden;
 }
 
 .footer-body{
     background-color: rgb(20, 20, 20);
-    position: fixed;
     bottom: 0;
     width: 100vw;
-    z-index: -1;
 }
 
 #footer h1{
@@ -1316,7 +1322,7 @@ nav{
     text-transform: uppercase;
 }
 
-#footer  p{
+#footer p{
     color:  white;
     font-size: 1.4rem;
     font-weight: 500;
@@ -1334,6 +1340,7 @@ nav{
 #footer .footer-end{
     background-color: rgb(44, 44, 44);
     color: rgb(168, 168, 168);
+    font-size: 1.2rem;
 }
 
 #footer .social-links a{
@@ -1344,7 +1351,6 @@ nav{
 #footer .social-links i:hover{
     color: #D51C22;
 }
-
 
 footer hr{
     background-color: white;
