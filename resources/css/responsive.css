@@ -453,12 +453,12 @@
         font-size: 1.5rem;
         width: 3rem;
         height: 3rem;
-        left: 50%;
+        left: 55%;
         transform: translateX(-50%);
     }
 
     #land-page .owl-nav .owl-prev{
-        left: 40%;
+        left: 45%;
     }
     #land-page .owl-nav .owl-next{
         right: 40%;
@@ -678,10 +678,10 @@
 
 
     #land-page .owl-nav .owl-prev{
-        left: 35%;
+        left: 45%;
     }
     #land-page .owl-nav .owl-next{
-        right: 35%;
+        left: 55%;
     }
 
 

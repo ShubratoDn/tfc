@@ -279,7 +279,7 @@ input{
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
-    margin: 0  0 0 auto;
+    margin: 0 1rem 0 auto;
     border: 1px solid #d51c2223;
     color: #D51C22;
     padding:  .5rem 2rem;

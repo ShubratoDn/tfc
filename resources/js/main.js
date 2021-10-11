@@ -241,29 +241,45 @@ var x = setInterval(function() {
 
 
 
+
 /* ====================================== */
-        /*PRODUCT QUANTITY BUTTON */
+        /*  Product Recommendation  */
 /* ====================================== */
-var quanUp = document.querySelector(".quan-up");
-var quanDown = document.querySelector(".quan-down");
-var quanInput = document.querySelector(".quan-input");
 
-
-quanUp.addEventListener('click', function(e){
-    quanInput.value++
- if(quanInput.value >=9){
-    quanInput.value = 9
- }
+$('#recommend-item-section .owl-carousel').owlCarousel({
+    loop:true,
+    nav:false,
+    margin:10,
+    dots:true,
+    responsiveClass:true,
+    autoplay:true,
+    autoplayTimeout:2000,
+    autoplayHoverPause:true,
+    navText:[
+        prevIcon,
+        nextIcon
+    ],
+    responsive:{
+        0:{
+            items:2,
+        },
+        400:{
+            items:2,
+        },
+        600:{
+            items:3,
+        },
+        768:{
+            items:3,
+        },
+        992:{
+            items:4,
+        },
+        1200:{
+            items:5,
+        }
+    }
 });
-
-quanDown.addEventListener('click', function(e){
-    quanInput.value--
- if(quanInput.value <=0){
-    quanInput.value = 0
- }
-});
- // product qty section End
-
 
 
 
@@ -304,6 +320,35 @@ $('#our-article .owl-carousel').owlCarousel({
 
 
 
+
+
+
+/* ====================================== */
+        /*PRODUCT QUANTITY BUTTON */
+/* ====================================== */
+var quanUp = document.querySelector(".quan-up");
+var quanDown = document.querySelector(".quan-down");
+var quanInput = document.querySelector(".quan-input");
+
+
+quanUp.addEventListener('click', function(e){
+    quanInput.value++
+ if(quanInput.value >=9){
+    quanInput.value = 9
+ }
+});
+
+quanDown.addEventListener('click', function(e){
+    quanInput.value--
+ if(quanInput.value <=0){
+    quanInput.value = 0
+ }
+});
+ // product qty section End
+
+
+
+
 /* ====================================== */
             /*  FEEDBACK  */
 /* ====================================== */
@@ -335,56 +380,10 @@ $('#item-fdback .owl-carousel').owlCarousel({
 
 
 
-
-/* ====================================== */
-        /*  Product Recommendation  */
-/* ====================================== */
-
-$('#recommend-item-section .owl-carousel').owlCarousel({
-    loop:true,
-    nav:false,
-    margin:10,
-    dots:true,
-    responsiveClass:true,
-    autoplay:true,
-    autoplayTimeout:2000,
-    autoplayHoverPause:true,
-    navText:[
-        prevIcon,
-        nextIcon
-    ],
-    responsive:{
-        0:{
-            items:2,
-        },
-        400:{
-            items:2,
-        },
-        600:{
-            items:3,
-        },
-        768:{
-            items:3,
-        },
-        992:{
-            items:4,
-        },
-        1200:{
-            items:5,
-        }
-    }
-})
-
-
-
-
-
-
-
 /* ====================================== */
         /*  footer  */
 /* ====================================== */
-var footer = document.querySelector("footer");
+
 
 
 
