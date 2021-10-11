@@ -1,9 +1,23 @@
 
-@media (max-width:1080px) {
+
+@media (max-width:1250px) {
+    .buy-btn,
+    .add-cart-btn{
+        padding: .5rem 3rem;
+    }
+    
+}
+
+@media (max-width:1096px) {
     .nav-extra ul li {
        padding: 1rem;
     }
-    
+
+    .buy-btn,
+    .add-cart-btn{
+        padding: .5rem 3rem;
+        font-size: 1.4rem;
+    }
 }
 
 @media (max-width: 1024px){
@@ -209,6 +223,12 @@
         margin: .2rem  0;
         padding: 0 1rem;
     }
+
+    .product-page-food-img-div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     
 }
 
@@ -311,6 +331,10 @@
         font-weight: bold;
     }
 
+    
+    #product-page .product-name{
+        font-size: 2rem;
+    }
 
 }
 
@@ -615,7 +639,19 @@
     /* product  card Ends */
 
 
+    .product-top,
+    .product-bottom{
+        margin: 1rem 1rem ;
+    }
+
     
+    
+    #product-page .product-name{
+        font-size: 1.8rem;
+    }
+
+    
+
 }
 
 

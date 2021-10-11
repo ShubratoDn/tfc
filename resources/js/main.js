@@ -244,56 +244,25 @@ var x = setInterval(function() {
 /* ====================================== */
         /*PRODUCT QUANTITY BUTTON */
 /* ====================================== */
+var quanUp = document.querySelector(".quan-up");
+var quanDown = document.querySelector(".quan-down");
+var quanInput = document.querySelector(".quan-input");
 
 
+quanUp.addEventListener('click', function(e){
+    quanInput.value++
+ if(quanInput.value >=9){
+    quanInput.value = 9
+ }
+});
 
-// var quanUp = document.querySelectorAll(".quan-up");
-// var quanDown = document.querySelectorAll(".quan-down");
-// var quanInput = document.querySelectorAll(".quan-input");
-
-
-
-// var fcardLen = document.querySelectorAll(".food-item").length;
-
-// for(var i=0; i<fcardLen; i++){
-//     var quantity = quanInput[i].value;
-
-//     quanUp[i].addEventListener('click', function(){
-//         quanValUp(i);
-//     });
-
-//     quanDown[i].addEventListener('click',function(){
-//         quanValDown();        
-//     });
-// }
-
-
-
-
-// function quanValUp(){  
-
-//     quantity++;    
-//     quanInput[i].value = quantity;
-//     // if(quantity >= 99){
-//     //     quantity = quantity - 1;
-//     // }
-
-// };
-
-// function quanValDown(){
-
-//     // for(var i=0; i<fcardLen; i++){
-//     //     quantity--;    
-//     //     quanInput[i].value = quantity;
-//     //     if(quantity <= 0){
-//     //         quantity = quantity + 1;
-//     //     }
-//     // }
-
-// };
-
-
-
+quanDown.addEventListener('click', function(e){
+    quanInput.value--
+ if(quanInput.value <=0){
+    quanInput.value = 0
+ }
+});
+ // product qty section End
 
 
 
@@ -326,6 +295,35 @@ $('#our-article .owl-carousel').owlCarousel({
         },
         1180:{
             items: 3
+        }
+    }
+})
+
+
+
+
+
+
+/* ====================================== */
+            /*  FEEDBACK  */
+/* ====================================== */
+
+$('#item-fdback .owl-carousel').owlCarousel({
+    loop:true,
+    nav:false,
+    margin:20,
+    dots:true,
+    responsiveClass:true,
+    autoplay:true,
+    autoplayTimeout:5000,
+    autoplayHoverPause:true,
+    navText:[
+        prevIcon,
+        nextIcon
+    ],
+    responsive:{
+        0:{
+            items:1,
         }
     }
 })
