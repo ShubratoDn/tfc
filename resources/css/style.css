@@ -1550,13 +1550,80 @@ footer hr{
 
 
 
+/* *=*=*=*=*=**=*=*=**=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=* */
+
+                /* ARTICLE PAGE */
+/* =========================================== */
+
+.banner-text{
+    text-transform: uppercase;
+    color: rgb(233, 233, 233);
+    font-family: 'Alfa Slab One', cursive;
+    font-weight: 100;
+    letter-spacing: .2rem;
+    font-size: 5rem;
+}
+
+.page-banner{
+    min-height: 30vh;
+    background:linear-gradient(to top,rgb(0, 0, 0,.1), rgb(0, 0, 0,.3)), url('../img/article-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment:  fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#all-articles{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0%;
+}
+
+#all-articles .article{
+    margin: 3rem 1rem;
+    max-width: 35rem;
+}
+
+#all-articles .article-img{
+    height: 23rem;
+}
 
 
 
 
+.article-modal{
+    display: none;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    justify-content: center;
+    align-items: center;
+}
 
+.full-article{
+    background-color: rgb(43, 43, 43);
+    color: white;
+    width: 90%;
+    height: 90%;
+    padding:  4rem;
+    font-family: 'Lato', sans-serif; 
+    border-radius: 1rem;
+    overflow: auto;
+    margin-top: 5rem;
+}
 
-
-
-
+.article-exit{
+    position: absolute;
+    top: 3%;
+    right: 5%;
+}
 

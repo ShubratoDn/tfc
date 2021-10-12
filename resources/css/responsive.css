@@ -336,6 +336,9 @@
         font-size: 2rem;
     }
 
+    .banner-text{
+        font-size: 4rem;
+    }
 }
 
 
@@ -523,7 +526,8 @@
         font-size: 1.4rem;
         text-align: left;
     }
-    
+
+
 }
 
 
@@ -649,8 +653,11 @@
     #product-page .product-name{
         font-size: 1.8rem;
     }
-
     
+    .banner-text{
+        font-size: 3.5rem;
+    }
+
 
 }
 
@@ -729,6 +736,11 @@
 
     footer .row{
         margin: 0;
+    }
+
+    
+    .banner-text{
+        font-size: 3rem;
     }
 
 
