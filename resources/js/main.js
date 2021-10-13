@@ -330,20 +330,24 @@ var quanUp = document.querySelector(".quan-up");
 var quanDown = document.querySelector(".quan-down");
 var quanInput = document.querySelector(".quan-input");
 
+try{
+    quanUp.addEventListener('click', function(e){
+        quanInput.value++
+    if(quanInput.value >=9){
+        quanInput.value = 9
+    }
+    });
 
-quanUp.addEventListener('click', function(e){
-    quanInput.value++
- if(quanInput.value >=9){
-    quanInput.value = 9
- }
-});
+    quanDown.addEventListener('click', function(e){
+        quanInput.value--
+    if(quanInput.value <=0){
+        quanInput.value = 0
+    }
+    });
+}catch(err){
+    console.log(err);
+}
 
-quanDown.addEventListener('click', function(e){
-    quanInput.value--
- if(quanInput.value <=0){
-    quanInput.value = 0
- }
-});
  // product qty section End
 
 
