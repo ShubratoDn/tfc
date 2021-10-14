@@ -1,6 +1,13 @@
 // FOR DATA AOS
 AOS.init();
 
+// ========LOADER==============\\
+var loader = document.querySelector(".loader-div");
+function loader(){
+    loader.style.display = "block";
+}
+// ========LOADER==============\\
+
 /* ================================== */
             /*   NAV BAR  */
 /* ================================== */

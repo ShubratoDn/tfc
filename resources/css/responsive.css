@@ -18,6 +18,10 @@
         padding: .5rem 3rem;
         font-size: 1.4rem;
     }
+
+    .contact-form{
+        width: 50%;
+    }
 }
 
 @media (max-width: 1024px){
@@ -339,7 +343,12 @@
     .banner-text{
         font-size: 4rem;
     }
+
+    .contact-form{
+        width: 65%;
+    }
 }
+
 
 
 /* ================================ */
@@ -405,6 +414,10 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
+    }
+
+    .contact-form{
+        width: 80%;
     }
     
 }
@@ -658,6 +671,9 @@
         font-size: 3.5rem;
     }
 
+    .contact-form{
+        width: 90%;
+    }
 
 }
 
