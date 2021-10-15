@@ -101,6 +101,60 @@ body{
     }
 }
 /* ==========LOADER ENDS============= */
+/* ========== Go Top ============= */
+.gotop{
+    background-color: transparent;
+    border: 1px solid #D51C22;
+    width: 5rem;
+    height: 5rem;
+    position: fixed;
+    bottom: 50%;
+    z-index: 50;
+    right: 5%;
+    color: white;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: all .5s;
+    border-radius: 50%;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.gotop:focus{
+    outline: none;
+}
+
+.gotop::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 0%;
+    height: 0%;
+    background-color: transparent;
+    border: 30px solid #D51C22;
+    transition: .5s;
+}
+
+.gotop:hover::after{
+    width: 300%;
+    height: 300%;
+}
+
+.gotop i{
+    z-index: 1;
+}
+
+.gotop:hover{
+    color: #D51C22;
+    font-weight: bold;
+    text-decoration: none;
+}
+/* ========== Go Top  Ends ============= */
 
 /* REusable components */
 h1,h2,h3,h4,h5,h6{
@@ -551,6 +605,18 @@ input{
 /* ================================== */
             /*  NAV BAR  */
 /* ================================== */
+.nav-fix1{ 
+    top: -10%;
+}
+
+.nav-fix{ 
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    z-index: 60;
+}
+
+
 .hamburger{
     display: none;
 }
@@ -561,12 +627,16 @@ input{
 
 /* NAV TOP  */
 nav{
-    z-index: 50;    
+    z-index: 50; 
+    position: initial;
+    transition: .5s;
 }
+
 
 .navbar{
     background-color: white;    
-    width: 100vw;    
+    width: 100vw;
+    z-index: 50;
 }
 
 .navbar .row{

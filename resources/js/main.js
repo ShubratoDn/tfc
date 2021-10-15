@@ -2,19 +2,90 @@
 AOS.init();
 
 // ========LOADER==============\\
-var loader = document.querySelector(".loader-div");
-function loader(){
-    loader.style.display = "block";
-}
+
+// var myLoader = document.querySelector(".loader-div");
+// function loader(){
+//     setTimeout(showLoader,1000);
+// }
+
+// function showLoader(){
+//     myLoader.style.display = "block";
+// }
+
+
+
 // ========LOADER==============\\
+
+/* ===========SCROLL TO TOP============= */
+//Get the button
+var gotop = document.querySelector(".gotop");
+var nav = document.querySelector("nav");
+var navHeight = document.querySelector("nav").offsetHeight;
+var body =  document.querySelector("body");
+
+
+try{
+    
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction(){
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+            gotop.style.visibility = "visible";
+            gotop.style.bottom = "5%";
+            gotop.style.opacity = "1"; 
+
+            // fixed navbar
+            nav.classList.add("nav-fix");
+            document.body.style.marginTop = navHeight+"px";
+
+        }else{
+            gotop.style.visibility = "hidden";
+            gotop.style.bottom = "50%";
+            gotop.style.opacity = "0";
+
+            // navbar initial
+            nav.classList.remove("nav-fix");
+            document.body.style.marginTop = "0px";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+
+}catch(err){
+
+}
+/* ===========SCROLL TO TOP============= */
+
+
+
+
+
+
+/* ============FIX NAV BAR starts================= */
+
+
+
+/* ============FIX NAV BAR Ends================= */
+
+
+
+
+
+
+
+
 
 /* ================================== */
             /*   NAV BAR  */
-/* ================================== */
-
-/*-------------------*/
-// Show hide Nav Menu
-/*-------------------*/
+            /* ================================== */
+            
+            /*-------------------*/
+            // Show hide Nav Menu
+            /*-------------------*/
 var hamburger = document.querySelector(".hamburger");
 var navMenuDiv = document.querySelector(".nav-menu-col");
 var navMenu = document.querySelector(".nav-menu");
