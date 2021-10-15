@@ -3,14 +3,16 @@ AOS.init();
 
 // ========LOADER==============\\
 
-// var myLoader = document.querySelector(".loader-div");
-// function loader(){
-//     setTimeout(showLoader,1000);
-// }
+var myLoader = document.querySelector(".loader-div");
+window.onload = loader();
 
-// function showLoader(){
-//     myLoader.style.display = "block";
-// }
+function loader(){
+    setTimeout(showLoader,1000);
+}
+
+function showLoader(){
+    myLoader.style.display = "none";
+}
 
 
 
@@ -22,6 +24,8 @@ var gotop = document.querySelector(".gotop");
 var nav = document.querySelector("nav");
 var navHeight = document.querySelector("nav").offsetHeight;
 var body =  document.querySelector("body");
+var logo = document.querySelector(".logo-div");
+var navTop = document.querySelector(".nav-top");
 
 
 try{
@@ -35,8 +39,13 @@ try{
             gotop.style.opacity = "1"; 
 
             // fixed navbar
-            nav.classList.add("nav-fix");
+            nav.classList.add("nav-fix-lg");
             document.body.style.marginTop = navHeight+"px";
+
+            if(screen.width <=991){
+                logo.classList.add("d-n");
+                navTop.classList.add("d-n");
+            }
 
         }else{
             gotop.style.visibility = "hidden";
@@ -44,8 +53,14 @@ try{
             gotop.style.opacity = "0";
 
             // navbar initial
-            nav.classList.remove("nav-fix");
+            nav.classList.remove("nav-fix-lg");
             document.body.style.marginTop = "0px";
+
+            if(logo.classList.contains("d-n")){
+                logo.classList.remove("d-n");
+                navTop.classList.remove("d-n");
+            }
+
         }
     }
 
@@ -80,12 +95,12 @@ try{
 
 
 /* ================================== */
-            /*   NAV BAR  */
-            /* ================================== */
-            
-            /*-------------------*/
-            // Show hide Nav Menu
-            /*-------------------*/
+/*   NAV BAR  */
+/* ================================== */
+
+/*-------------------*/
+// Show hide Nav Menu
+/*-------------------*/
 var hamburger = document.querySelector(".hamburger");
 var navMenuDiv = document.querySelector(".nav-menu-col");
 var navMenu = document.querySelector(".nav-menu");
@@ -275,43 +290,48 @@ $('#deal-today .owl-carousel').owlCarousel({
         /*DEAL FOR TODAY COUNT DOWN   */
 /* ====================================== */
 
-// Set the date we're counting down to
-var countDownDate = new Date("sep 25, 2022 15:37:25").getTime();
+try{
+        
+    // Set the date we're counting down to
+    var countDownDate = new Date("sep 25, 2022 15:37:25").getTime();
 
-// Update the count down every 1 second
-var x = setInterval(function() {
+    // Update the count down every 1 second
+    var x = setInterval(function() {
 
-  // Get today's date and time
-  var now = new Date().getTime();
+    // Get today's date and time
+    var now = new Date().getTime();
+        
+    // Find the distance between now and the count down date
+    var distance = countDownDate - now;
+        
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);  
+
+    //   getting the length of all class
+    var dealLen = document.querySelectorAll(".cd-sec").length;
     
-  // Find the distance between now and the count down date
-  var distance = countDownDate - now;
-    
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);  
+    for(var i=1; i<=dealLen; i++){
+        document.querySelectorAll(".cd-day")[i].innerHTML = days;
+        document.querySelectorAll(".cd-hour")[i].innerHTML = hours;
+        document.querySelectorAll(".cd-min")[i].innerHTML = minutes;
+        document.querySelectorAll(".cd-sec")[i].innerHTML = seconds;
 
-//   getting the length of all class
-  var dealLen = document.querySelectorAll(".cd-sec").length;
-  
-  for(var i=1; i<=dealLen; i++){
-    document.querySelectorAll(".cd-day")[i].innerHTML = days;
-    document.querySelectorAll(".cd-hour")[i].innerHTML = hours;
-    document.querySelectorAll(".cd-min")[i].innerHTML = minutes;
-    document.querySelectorAll(".cd-sec")[i].innerHTML = seconds;
-
-    // If the count down is over, write some text 
-    if (distance < 0) {
-        clearInterval(x);
-        document.querySelectorAll(".count-down")[i].innerHTML = "EXPIRED";
+        // If the count down is over, write some text 
+        if (distance < 0) {
+            clearInterval(x);
+            document.querySelectorAll(".count-down")[i].innerHTML = "EXPIRED";
+        }
     }
-  }
 
-  
-}, 1000);
+    
+    }, 1000);
 
+}catch(err){
+    console.log(err);
+}
 
 
 

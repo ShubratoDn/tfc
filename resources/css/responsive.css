@@ -67,7 +67,8 @@
 
     .nav-menu{
         background-color: rgba(0, 0, 0, 0.6);
-        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+                backdrop-filter: blur(10px);
         position: fixed;
         top: 0;
         left: 0;
@@ -105,8 +106,21 @@
         width: 100%;
         border: 1px solid white;
         border-radius: 50%;
-        animation: name duration timing-function delay iteration-count direction fill-mode;
-        animation: borderWave 1s infinite linear;
+        -webkit-animation: name duration timing-function delay iteration-count direction fill-mode;
+                animation: name duration timing-function delay iteration-count direction fill-mode;
+        -webkit-animation: borderWave 1s infinite linear;
+                animation: borderWave 1s infinite linear;
+    }
+
+    @-webkit-keyframes borderWave {
+        from{
+            transform: scale(1);
+            opacity: 1;
+        }
+        to{
+            transform: scale(1.5);
+            opacity: 0;
+        }
     }
 
     @keyframes borderWave {
@@ -177,7 +191,8 @@
     
     .dropdown:hover .dropdown-items{    
         transform: translate(-0%, -0%) scale(1);
-        animation: none;
+        -webkit-animation: none;
+                animation: none;
         display: block;
     }
     
@@ -761,3 +776,4 @@
 
 
 }
+

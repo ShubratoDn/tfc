@@ -40,7 +40,7 @@ body{
     width: 100vw;
     background-color: white;
     z-index: 100;
-    display: none;
+    display: block;
 }
 
 .loader{
@@ -75,8 +75,19 @@ body{
     height: 100%;
     width: 100%;
     border-radius: 50%;
-    animation: loaderBef 1s .5s ease-out infinite alternate-reverse;
+    animation: loaderBef 1s 1s ease-out infinite alternate-reverse;
     transform: scale(0);
+}
+
+@-webkit-keyframes loaderAft {
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(2);
+        opacity: 0;
+        border-color: #D51C22;
+    }
 }
 
 @keyframes loaderAft {
@@ -87,6 +98,17 @@ body{
         transform: scale(2);
         opacity: 0;
         border-color: #D51C22;
+    }
+}
+
+@-webkit-keyframes loaderBef {
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(2);
+        opacity: 0;
+        border-color: royalblue;
     }
 }
 
@@ -605,11 +627,7 @@ input{
 /* ================================== */
             /*  NAV BAR  */
 /* ================================== */
-.nav-fix1{ 
-    top: -10%;
-}
-
-.nav-fix{ 
+.nav-fix-lg{ 
     position: fixed !important;
     top: 0;
     left: 0;
@@ -632,6 +650,9 @@ nav{
     transition: .5s;
 }
 
+.d-n{
+    display: none !important;
+}
 
 .navbar{
     background-color: white;    
@@ -1863,6 +1884,22 @@ textarea{
     outline: none;
 }
 
+#contact-form ::-webkit-input-placeholder{
+    color: rgba(114, 108, 108, 0.753);
+}
+
+#contact-form ::-moz-placeholder{
+    color: rgba(114, 108, 108, 0.753);
+}
+
+#contact-form :-ms-input-placeholder{
+    color: rgba(114, 108, 108, 0.753);
+}
+
+#contact-form ::-ms-input-placeholder{
+    color: rgba(114, 108, 108, 0.753);
+}
+
 #contact-form ::placeholder{
     color: rgba(114, 108, 108, 0.753);
 }
@@ -1887,10 +1924,12 @@ textarea{
 }
 
 #contact-map iframe{
-    filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+            filter: grayscale(1);
     transition: .5s;
 }
 
 #contact-map iframe:hover{
-    filter: grayscale(0);
+    -webkit-filter: grayscale(0);
+            filter: grayscale(0);
 }
